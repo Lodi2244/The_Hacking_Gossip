@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MultirecipientTest < ActiveSupport::TestCase
+class GossipsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

@@ -1,15 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  author: MyString
   content: MyText
-  date: 
-  user: one
-  tag: one
 
 two:
-  title: MyString
+  author: MyString
   content: MyText
-  date: 
-  user: two
-  tag: two
