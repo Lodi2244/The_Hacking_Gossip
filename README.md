@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This App allows you to browse through The Hacking Project juicy gossips !
 
-Things you may want to cover:
+To enjoy the ride just enter the following commands : 
 
-* Ruby version
 
-* System dependencies
+* ``Bundle install``
 
-* Configuration
+* ``Rails db:reset``
 
-* Database creation
+* ``Rails db:seed``
 
-* Database initialization
+* ``Rails server``
 
-* How to run the test suite
+* ==> Production link : https://morning-peak-55551.herokuapp.com
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Have a nice nav ;)
