@@ -1,6 +1,7 @@
 class User < ApplicationRecord
-  has_and_belongs_to_many :cities
+  belongs_to :city
   has_many :gossips
-  has_many :tags
-  has_and_belongs_to_many :privatemessage
+  has_many :comments
+  has_many :likes
+  has_many :private_messages
 end

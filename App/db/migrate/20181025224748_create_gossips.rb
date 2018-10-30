@@ -4,7 +4,7 @@ class CreateGossips < ActiveRecord::Migration[5.2]
       t.string :title
       t.text :content
       t.datetime :date
-      t.references :tag, foreign_key: true
+      t.references :user, foreign_key: true, index: true
 
       t.timestamps
     end

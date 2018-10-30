@@ -1,3 +1,5 @@
 class PrivateMessage < ApplicationRecord
-  has_and_belongs_to_many :users
+  belongs_to :sender, class_name: "User"
+  has_many :multirecipients
+  has_many :users, through: :multirecipients
 end

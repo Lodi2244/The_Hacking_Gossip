@@ -6,10 +6,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.text :description
       t.string :email
       t.integer :age
-      t.belongs_to :city, index: true
-      t.belongs_to :private_message, index: true
-      t.belongs_to :gossip, index: true
-      t.belongs_to :tag, index: true
+      t.belongs_to :city, foreign_key: true
+
 
       t.timestamps
     end
