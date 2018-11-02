@@ -1,3 +1,8 @@
-<h3><%= @gossip.author %></h3>
-<p><%= @gossip.content %></p>
-<i>Created, <%= @gossip.created_at.to_date %></i>
+<div class="center jumbotron">
+  <div class="card-tag">
+<h1><%= @gossip.anonymous_gossiper %></h1>
+<h2><%= @gossip.content %></h2>
+<p><%= @gossip.comments %></p>
+<i>Created, <%= @gossip.created_at.to_date %></i><br>
+<%= link_to "Add comment", '/comments/new', class: "btn btn-dark" %>
+</div>

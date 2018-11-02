@@ -1,12 +1,22 @@
-<div class="card-group">
-<% @gossips.each do |gossip|  %>
-  <div class="card.px-1" style="width: 18rem;">
-    <div class="card-body">
-      <%= link_to "See Gossip", gossip_path(gossip.id), class: "card-link" %>
-      <h5 class="card-title"><%= gossip.author %></h5>
-      <h6 class="card-subtitle mb-2 text-muted"><%= gossip.created_at.to_date %></h6>
-      <p class="card-text"><%= gossip.content %></p>
-    </div>
-  </div>
-<% end %>
+<div class="center jumbotron">
+<h1>Gossips Wall </h1><br>
+
+<div class="table btn btn-dark" >
+<table width="10%">
+  <thead>
+    <tr>
+      <td>Gossiper</td>
+      <td>Gossip</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @gossips.each do |gossip|  %>
+    <tr>
+    <td><%= gossip.author %></td>
+      <td><%= gossip.content %></td>
+      <td><%= link_to "See Gossip", gossip_path(gossip.id), class: "btn btn-dark"%></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
 </div>

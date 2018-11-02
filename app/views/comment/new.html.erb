@@ -1,0 +1,29 @@
+<div class="center jumbotron">
+<%= form_for @comment do |f| %>
+  <div class="form-group" placeholder="Anonymous2244">
+    <label>Commentor</label>
+    <%= f.text_field :anonymous_commentor, class: 'form-control' %>
+  </div>
+  <div class="form-group" placeholder="I don't read Latin !">
+    <label>Content</label>
+    <%= f.text_area :content, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-dark">Add comment</button>
+  </div>
+<% end %>
+
+<h2>Add a comment:</h2>
+<%= form_with(model: [@gossip, @gossip.comments.build], local: true) do |form| %>
+  <p>
+    <%= form.label :anonymous_commentor %><br>
+    <%= form.text_field :anonymous_commentor %>
+  </p>
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

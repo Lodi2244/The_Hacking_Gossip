@@ -5,6 +5,8 @@ ruby '2.5.1'
 
 gem 'faker', '~> 1.9.1'
 
+gem 'bcrypt', '~> 3.1.12'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 

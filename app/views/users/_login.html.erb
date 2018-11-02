@@ -1,0 +1,24 @@
+
+
+<div class="center jumbotron">
+  <h2>Create your profile </h2><br>
+  <nav>
+  <form class="form-bg">
+  <%= form_tag "/registration/new", method: :post do %>
+      <div class="form-group">
+      <label for="exampleInputName1">Username </label>
+      <input type="Username" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Nickname123">
+      </div>
+      <div class="form-group">
+      <label for="exampleInputEmail1"> @ </label>
+      <input type="Email" class="form-control" name="Email" id="exampleInputEmail" placeholder="example@email.com">
+      </div>
+      <div class="form-group">
+      <label for="exampleInputPassword1"> Password </label>
+      <input type="Password" class="form-control" name="Password" id="exampleInputPassword1" placeholder="*******">
+      </div>
+      <input type="submit" value="Create Profile" class="btn btn-dark"/>
+    </div><br/>
+  <% end %>
+  </form>
+  </nav>

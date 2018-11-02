@@ -8,6 +8,21 @@
 require 'faker'
 
 10.times do
+  user = User.new
+  user.user_name = Faker::Internet.username
+  user.email = Faker::Internet.email
+  user.password = Faker::Internet.password
+  user.save
+end
+
+10.times do
+  comment = Comment.new
+  comment.name = Faker::Lorem.sentence
+  comment.content = Faker::Lorem.paragraph
+  comment.save
+end
+
+10.times do
   gossip = Gossip.new
   gossip.author = Faker::Name.name
   gossip.content = Faker::Lorem.sentence
